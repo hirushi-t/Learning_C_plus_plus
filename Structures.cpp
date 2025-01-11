@@ -22,6 +22,7 @@ struct Person {
 
 // Method 3
 // Creating struct variables using an alias
+// Better to avoid
 typedef struct School {
     string name;
     int num_students;
@@ -59,7 +60,6 @@ int main() {
     cout << "What is your age?" << endl;
     cin >> your_age;
     struct Person person3 = {your_name, your_age};
-    cout << endl;
     cout << person3.name << " is " << person3.age << " years old." << endl; 
 
     // Method 3
